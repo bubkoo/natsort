@@ -1,0 +1,31 @@
+{
+  "name": "natural-sorts",
+  "version": "0.0.0",
+  "description": "Javascript Natural Sort Algorithm With Unicode Support",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec",
+    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release": "npm run release:patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubkoo/natural-sort.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bubkoo/natural-sort/issues"
+  },
+  "homepage": "https://github.com/bubkoo/natural-sort#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  }
+}
