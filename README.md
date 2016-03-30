@@ -18,7 +18,7 @@ Most sort implementations utilizing a fast sort algorithm but they all lack the 
 
 This algorithm was deeply inspired from [this blog post](http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/) of [Jim Palmer](http://www.linkedin.com/in/jimbob).
 
-The project name "**natsort**" was inspired from PHP's `natsort()` function.
+The project name "**natsort**" was inspired from Python's `[natsort()](https://pypi.python.org/pypi/natsort)`.
 
 ### Features
 
@@ -36,4 +36,15 @@ $ npm install natsort --save
 
 ## Usage
 
+```js
+var natsort = require('natsort');
+
+// simple numerics
+['10',9,2,'1','4'].sort(natsort());
+// ['1',2,'4',9,'10']
+
+// floats
+['10.0401',10.022,10.042,'10.021999'].sort(natsort())
+// ['10.021999',10.022,'10.0401',10.042]
+```
 
