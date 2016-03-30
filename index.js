@@ -128,16 +128,4 @@ var natsort = function (options) {
 // exports
 // -------
 
-(function (root, factory) {
-  if (typeof exports === 'object' && typeof module === 'object') {
-    module.exports = factory();
-  } else if (typeof define === 'function' && define.amd) {
-    define([], factory);
-  } else if (typeof exports === 'object') {
-    exports['natsort'] = factory();
-  } else {
-    root['natsort'] = factory();
-  }
-})(this, function () {
-  return natsort;
-});
+module.exports = natsort;
