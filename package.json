@@ -12,16 +12,28 @@
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release": "npm run release:patch"
   },
+  "keywords": [
+    "natural sort",
+    "natsort",
+    "sort",
+    "numeric",
+    "unicode",
+    "date",
+    "algorithm",
+    "sorter",
+    "sort algorithm",
+    "datetime"
+  ],
+  "author": "bubkoo<bubkoo@163.com>",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bubkoo/natural-sort.git"
+    "url": "git+https://github.com/bubkoo/natsort.git"
   },
-  "author": "",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bubkoo/natural-sort/issues"
+    "url": "https://github.com/bubkoo/natsort/issues"
   },
-  "homepage": "https://github.com/bubkoo/natural-sort#readme",
+  "homepage": "https://github.com/bubkoo/natsort#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
