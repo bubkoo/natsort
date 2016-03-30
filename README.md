@@ -61,8 +61,6 @@ objArr.sort(function(a, b) {
 });
 ```
 
-## Performance
-
 ## Examples
 
 ```js
