@@ -1,12 +1,12 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 describe('contributed tests: ', function () {
 
   it('contributed - Bob Zeiner (Chrome not stable sort)', function () {
     expect([
       'T78', 'U17', 'U10', 'U12', 'U14', '745', 'U7', '485', 'S16', 'S2', 'S22', '1081', 'S25', '1055', '779', '776', '771', '44', '4', '87', '1091', '42', '480', '952', '951', '756', '1000', '824', '770', '666', '633', '619', '1', '991', '77H', 'PIER-7', '47', '29', '9', '77L', '433'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1', '4', '9', '29', '42', '44', '47', '77H', '77L', '87', '433', '480', '485', '619', '633', '666', '745', '756', '770', '771', '776', '779', '824', '951', '952', '991', '1000', '1055', '1081', '1091', 'PIER-7', 'S2', 'S16', 'S22', 'S25', 'T78', 'U7', 'U10', 'U12', 'U14', 'U17'
     ]);
   });
@@ -21,7 +21,7 @@ describe('contributed tests: ', function () {
       "Newsstand stop, Position: 4",
       "Newsstand stop, Position: 4",
       "FSI stop, Position: 5"
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       "FSI stop, Position: 5",
       "FSI stop, Position: 5",
       "FSI stop, Position: 6",
@@ -41,7 +41,7 @@ describe('contributed tests: ', function () {
       'azd',
       undefined,
       'asd'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       1,
       2,
       10,
@@ -59,7 +59,7 @@ describe('contributed tests: ', function () {
       '-3',
       '0',
       '-5'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '-5',
       '-3',
       '-2',
@@ -72,7 +72,7 @@ describe('contributed tests: ', function () {
   it('invalid sort order - Howie Schecter', function () {
     expect([
       '9', '11', '22', '99', 'A', 'aaaa', 'bbbb', 'Aaaa', 'aAaa', 'aa', 'AA', 'Aa', 'aA', 'BB', 'bB', 'aaA', 'AaA', 'aaa'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '9',
       '11',
       '22',
@@ -109,7 +109,7 @@ describe('contributed tests: ', function () {
       '5F',
       '1D',
       '2M'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1A',
       '1D',
       '2C',
@@ -133,7 +133,7 @@ describe('contributed tests: ', function () {
       'img199',
       'imga99',
       'imgz99'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'img 99',
       'img199',
       'imga99',
@@ -149,7 +149,7 @@ describe('contributed tests: ', function () {
       'imgz 99',
       'imgb99',
       'imgz199'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'img 99',
       'img199',
       'imga99',
@@ -164,7 +164,7 @@ describe('contributed tests: ', function () {
       '1',
       '02',
       '3'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1',
       '02',
       '3'
@@ -177,7 +177,7 @@ describe('contributed tests: ', function () {
       '1.1',
       '1.10',
       '1.54'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1.100',
       '1.1',
       '1.10',
@@ -192,7 +192,7 @@ describe('contributed tests: ', function () {
       'v1.10',
       'v1.1000',
       'v1.54'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'v1.1',
       'v1.10',
       'v1.54',
@@ -207,7 +207,7 @@ describe('contributed tests: ', function () {
       'MySnmp 4234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567',
       'MySnmp 2234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567',
       'MySnmp 3234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'MySnmp 1234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567',
       'MySnmp 2234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567',
       'MySnmp 3234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567891234567',
@@ -219,7 +219,7 @@ describe('contributed tests: ', function () {
     expect([
       'bar.1-2',
       'bar.1'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'bar.1',
       'bar.1-2'
     ]);
@@ -228,7 +228,7 @@ describe('contributed tests: ', function () {
   it("['SomeString', 'SomeString 1'] bombing on 'undefined is not an object' - dannycochran", function () {
     expect([
       'SomeString', 'SomeString 1'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'SomeString', 'SomeString 1'
     ]);
   });
@@ -242,7 +242,7 @@ describe('contributed tests: ', function () {
       'Ueve',
       '\xDCxk\xFCll',
       'Uffenbach'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '\xDCbelacker',
       'Udet',
       'Uell',
@@ -258,7 +258,7 @@ describe('contributed tests: ', function () {
       '2.2 sec',
       '1.9 sec',
       '1.53 sec'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1.53 sec',
       '1.9 sec',
       '2.2 sec'
@@ -270,7 +270,7 @@ describe('contributed tests: ', function () {
       '2.2sec',
       '1.9sec',
       '1.53sec'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1.53sec',
       '1.9sec',
       '2.2sec'

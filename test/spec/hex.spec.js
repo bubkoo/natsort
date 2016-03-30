@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('hex: ', function () {
@@ -9,7 +9,7 @@ describe('hex: ', function () {
       '0xA',
       '0x9',
       '0x99'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '0x9',
       '0xA',
       '0x99'
@@ -22,7 +22,7 @@ describe('hex: ', function () {
       '0xVVV',
       '0xVEV',
       '0xUU'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '0xUU',
       '0xVEV',
       '0xVVV',

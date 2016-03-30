@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('rosetta code natural sort small test set: ', function () {
@@ -10,7 +10,7 @@ describe('rosetta code natural sort small test set: ', function () {
       ' ignore leading spaces: 2-1',
       '  ignore leading spaces: 2+0',
       '   ignore leading spaces: 2+1'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '  ignore leading spaces: 2+0',
       '   ignore leading spaces: 2+1',
       ' ignore leading spaces: 2-1',
@@ -24,7 +24,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'ignore m.a.s  spaces: 2-1',
       'ignore m.a.s   spaces: 2+0',
       'ignore m.a.s    spaces: 2+1'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'ignore m.a.s   spaces: 2+0',
       'ignore m.a.s    spaces: 2+1',
       'ignore m.a.s  spaces: 2-1',
@@ -40,7 +40,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'Equiv.\x0bspaces: 3+0',
       'Equiv.\nspaces: 3+1',
       'Equiv.\tspaces: 3+2'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'Equiv.\x0bspaces: 3+0',
       'Equiv.\nspaces: 3+1',
       'Equiv.\tspaces: 3+2',
@@ -56,7 +56,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'caSE INDEPENENT: 3-1',
       'casE INDEPENENT: 3+0',
       'case INDEPENENT: 3+1'
-    ].sort(naturalSort({ insensitive: true }))).to.eql([
+    ].sort(natsort({ insensitive: true }))).to.eql([
       'casE INDEPENENT: 3+0',
       'case INDEPENENT: 3+1',
       'caSE INDEPENENT: 3-1',
@@ -70,7 +70,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'foo100bar10baz0.txt',
       'foo1000bar99baz10.txt',
       'foo1000bar99baz9.txt'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'foo100bar10baz0.txt',
       'foo100bar99baz0.txt',
       'foo1000bar99baz9.txt',
@@ -84,7 +84,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'The 40th step more',
       'The 39 steps',
       'Wanda'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'The 39 steps',
       'The 40th step more',
       'The Wind in the Willows',
@@ -98,7 +98,7 @@ describe('rosetta code natural sort small test set: ', function () {
       'Equiv. \xdd accents: 2-1',
       'Equiv. y accents: 2+0',
       'Equiv. Y accents: 2+1'
-    ].sort(naturalSort({ insensitive: true }))).to.eql([
+    ].sort(natsort({ insensitive: true }))).to.eql([
       'Equiv. y accents: 2+0',
       'Equiv. Y accents: 2+1',
       'Equiv. \xfd accents: 2-2',

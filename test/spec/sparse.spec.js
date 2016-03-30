@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 describe('sparse array sort: ', function () {
 
@@ -13,7 +13,7 @@ describe('sparse array sort: ', function () {
       arr2.push(undefined);
     }
 
-    arr1.sort(naturalSort());
+    arr1.sort(natsort());
 
     for (i = 0; i < 3; i++) {
       expect(arr1[i]).to.equal(arr2[i]);

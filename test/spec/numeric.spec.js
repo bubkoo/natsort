@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('numeric: ', function () {
@@ -11,7 +11,7 @@ describe('numeric: ', function () {
       2,
       '1',
       '4'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1',
       2,
       '4',
@@ -25,7 +25,7 @@ describe('numeric: ', function () {
       '0001',
       '002',
       '001'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '0001',
       '001',
       '002'
@@ -38,7 +38,7 @@ describe('numeric: ', function () {
       10.022,
       10.042,
       '10.021999'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.021999',
       10.022,
       '10.0401',
@@ -52,7 +52,7 @@ describe('numeric: ', function () {
       10.02,
       10.03,
       '10.01'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.01',
       10.02,
       10.03,
@@ -66,7 +66,7 @@ describe('numeric: ', function () {
       10.022,
       10.042,
       '10.021999'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.021999',
       10.022,
       '10.0401',
@@ -80,7 +80,7 @@ describe('numeric: ', function () {
       '10.039F',
       '10.038d',
       '10.037D'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.037D',
       '10.038d',
       '10.039F',
@@ -94,7 +94,7 @@ describe('numeric: ', function () {
       '10.039T',
       '10.038ooo',
       '10.037g'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.004Z',
       '10.037g',
       '10.038ooo',
@@ -107,7 +107,7 @@ describe('numeric: ', function () {
       '1.528535047e5',
       '1.528535047e7',
       '1.528535047e3'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '1.528535047e3',
       '1.528535047e5',
       '1.528535047e7'
@@ -122,7 +122,7 @@ describe('numeric: ', function () {
       '-3',
       '0',
       '-5'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '-5',
       '-3',
       '-2',
@@ -140,7 +140,7 @@ describe('numeric: ', function () {
       -3,
       '0',
       '-5'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '-5',
       -3,
       '-2',
@@ -158,7 +158,7 @@ describe('numeric: ', function () {
       4.1,
       -2.001,
       -5
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       -5,
       -2.1,
       -2.01,

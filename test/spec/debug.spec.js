@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('debug: ', function () {
@@ -11,7 +11,7 @@ describe('debug: ', function () {
       'myRelease-1.1.4',
       'myRelease-1.1.1',
       'myRelease-1.0.5'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       'myRelease-1.0.5',
       'myRelease-1.1.1',
       'myRelease-1.1.3',

@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('desc support: ', function () {
@@ -12,7 +12,7 @@ describe('desc support: ', function () {
       'b',
       'd',
       'f'
-    ].sort(naturalSort({ desc: true }))).to.eql([
+    ].sort(natsort({ desc: true }))).to.eql([
       'f',
       'd',
       'b',
@@ -30,7 +30,7 @@ describe('desc support: ', function () {
       'b',
       'd',
       'f'
-    ].sort(naturalSort({ desc: true }))).to.eql([
+    ].sort(natsort({ desc: true }))).to.eql([
       'f',
       'd',
       'b',
@@ -49,7 +49,7 @@ describe('desc support: ', function () {
       'b',
       'd',
       'f'
-    ].sort(naturalSort({ insensitive: false }))).to.eql([
+    ].sort(natsort({ insensitive: false }))).to.eql([
       'A',
       'C',
       'E',
@@ -67,7 +67,7 @@ describe('desc support: ', function () {
       'd',
       'E',
       'f'
-    ].sort(naturalSort({ insensitive: false }))).to.eql([
+    ].sort(natsort({ insensitive: false }))).to.eql([
       'A',
       'C',
       'E',

@@ -1,6 +1,5 @@
-
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('handle of space: ', function () {
@@ -12,7 +11,7 @@ describe('handle of space: ', function () {
       '  3',
       ' 2',
       0
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       0,
       ' 1',
       ' 2',
@@ -29,7 +28,7 @@ describe('handle of space: ', function () {
       2,
       5.663,
       5.6629
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '',
       2,
       5.6629,
@@ -42,7 +41,7 @@ describe('handle of space: ', function () {
       0,
       '0',
       ''
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '',
       0,
       '0'

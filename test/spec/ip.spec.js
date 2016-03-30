@@ -1,5 +1,5 @@
-var naturalSort = require('../../index.js');
-var expect      = require('chai').expect;
+var natsort = require('../../index.js');
+var expect  = require('chai').expect;
 
 
 describe('ip addresses: ', function () {
@@ -13,7 +13,7 @@ describe('ip addresses: ', function () {
       '192.168.1.123',
       '10.0.0.2',
       '10.0.0.1'
-    ].sort(naturalSort())).to.eql([
+    ].sort(natsort())).to.eql([
       '10.0.0.1',
       '10.0.0.2',
       '192.168.0.1',
