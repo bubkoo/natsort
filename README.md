@@ -14,13 +14,25 @@
 
 ## TL;DR
 
-This algorithm was deeply inspired from [this blog post](http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/) of [Jim Palmer](http://www.linkedin.com/in/jimbob).
-
 Most sort implementations utilizing a fast sort algorithm but they all lack the ability to perform a "**natural sort**". That is, sorting an array of dates, numeric string, software version numbers, etc. and getting the "natural" a.k.a. "expected" ordering on the results. 
 
-## Features
+This algorithm was deeply inspired from [this blog post](http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/) of [Jim Palmer](http://www.linkedin.com/in/jimbob).
 
-## install
+The project name "**natsort**" was inspired from PHP's `natsort()` function.
+
+### Features
+
+- Numeric support
+- Unicode support
+- Dates sorting support
+- Empty strings are always come first
+
+
+## Install
+
+```
+$ npm install natsort --save
+```
 
 ## Usage
 
