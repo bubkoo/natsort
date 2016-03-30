@@ -2,15 +2,15 @@
 
 > Javascript Natural Sort Algorithm With Unicode Support.
 
-[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/natural-sort/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/natsort/blob/master/LICENSE)
 
-[![tag:?](https://img.shields.io/github/tag/bubkoo/natural-sort.svg?style=flat-square)](https://github.com/bubkoo/natural-sort/releases)
-[![build:?](https://img.shields.io/travis/bubkoo/natural-sort/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/natural-sort)
-[![coverage:?](https://img.shields.io/coveralls/bubkoo/natural-sort/master.svg?style=flat-square)](https://coveralls.io/github/bubkoo/natural-sort)
+[![tag:?](https://img.shields.io/github/tag/bubkoo/natsort.svg?style=flat-square)](https://github.com/bubkoo/natsort/releases)
+[![build:?](https://img.shields.io/travis/bubkoo/natsort/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/natsort)
+[![coverage:?](https://img.shields.io/coveralls/bubkoo/natsort/master.svg?style=flat-square)](https://coveralls.io/github/bubkoo/natsort)
 
-[![npm:](https://img.shields.io/npm/v/natural-sorter.svg?style=flat-square)](https://www.npmjs.com/packages/natural-sorter)
-[![downloads:?](https://img.shields.io/npm/dm/natural-sorter.svg?style=flat-square)](https://www.npmjs.com/packages/natural-sorter)
-[![dependencies:?](https://img.shields.io/david/bubkoo/natural-sorter.svg?style=flat-square)](https://david-dm.org/bubkoo/natural-sorter)
+[![npm:](https://img.shields.io/npm/v/natsort.svg?style=flat-square)](https://www.npmjs.com/packages/natsort)
+[![downloads:?](https://img.shields.io/npm/dm/natsort.svg?style=flat-square)](https://www.npmjs.com/packages/natsort)
+[![dependencies:?](https://img.shields.io/david/bubkoo/natsort.svg?style=flat-square)](https://david-dm.org/bubkoo/natsort)
 
 ## TL;DR
 
