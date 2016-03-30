@@ -40,7 +40,32 @@ $ npm install natsort --save
 
 ```js
 var natsort = require('natsort');
+var someArr = [2, 5, 3, 4, 1, 'a', 'B'];
 
+someArr.sort(natsort());
+someArr.sort(natsort({ desc: true }));
+someArr.sort(natsort({ insensitive: true }));
+
+// sort with object array
+var objArr = [
+    { val: 'B' },
+    { val: 'a' },
+    { val: 'D' },
+    { val: 'c' }
+];
+
+var sorter = natsort();
+
+objArr.sort(function(a, b) {
+    return sorter(a.val, b.val);
+});
+```
+
+## Performance
+
+## Examples
+
+```js
 // simple numerics
 ['10', 9, 2, '1', '4'].sort(natsort());
 // ['1',2,'4',9,'10']
@@ -176,3 +201,4 @@ var natsort = require('natsort');
 //[1, 2, 3, 4, 5]
 ```
 
+Find more examples check the tests in `/test`, or you can contribute your test cases by [issue](https://github.com/javve/natural-sort/issues) or [pull request](https://github.com/javve/natural-sort/pulls).
