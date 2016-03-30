@@ -1,4 +1,4 @@
-var naturalSort = function (options) {
+var natsort = function (options) {
 
   'use strict';
 
@@ -134,10 +134,10 @@ var naturalSort = function (options) {
   } else if (typeof define === 'function' && define.amd) {
     define([], factory);
   } else if (typeof exports === 'object') {
-    exports['naturalSort'] = factory();
+    exports['natsort'] = factory();
   } else {
-    root['naturalSort'] = factory();
+    root['natsort'] = factory();
   }
 })(this, function () {
-  return naturalSort;
+  return natsort;
 });
