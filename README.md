@@ -18,7 +18,7 @@ Most sort implementations utilizing a fast sort algorithm but they all lack the 
 
 This algorithm was deeply inspired from [this blog post](http://www.overset.com/2008/09/01/javascript-natural-sort-algorithm/) of [Jim Palmer](http://www.linkedin.com/in/jimbob).
 
-The project name "**natsort**" was inspired from Python's `[natsort()](https://pypi.python.org/pypi/natsort)`.
+The project name "**natsort**" was inspired from Python's [natsort()](https://pypi.python.org/pypi/natsort).
 
 ### Features
 
@@ -201,4 +201,6 @@ objArr.sort(function(a, b) {
 //[1, 2, 3, 4, 5]
 ```
 
-Find more examples check the tests in `/test`, or you can contribute your test cases by [issue](https://github.com/javve/natural-sort/issues) or [pull request](https://github.com/javve/natural-sort/pulls).
+Find more examples check the tests in `/test`. 
+
+Contribute your test cases by [issue](https://github.com/javve/natural-sort/issues) or [pull request](https://github.com/javve/natural-sort/pulls).
