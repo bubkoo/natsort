@@ -40,8 +40,10 @@ describe('handle of space: ', function () {
     expect([
       0,
       '0',
+      '',
       ''
     ].sort(natsort())).to.eql([
+      '',
       '',
       0,
       '0'
