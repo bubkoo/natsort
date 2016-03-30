@@ -1,5 +1,5 @@
 {
-  "name": "natural-sorts",
+  "name": "natural-sorter",
   "version": "0.0.0",
   "description": "Javascript Natural Sort Algorithm With Unicode Support",
   "main": "index.js",
