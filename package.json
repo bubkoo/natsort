@@ -4,14 +4,12 @@
   "description": "Javascript Natural Sort Algorithm With Unicode Support",
   "main": "index.js",
   "scripts": {
+    "lint": "jshint index.js",
+    "pretest": "npm run lint",
     "test": "mocha -R spec",
     "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
     "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
-    "prepublish": "npm test",
-    "release:patch": "npm version patch && npm publish && git push --follow-tags",
-    "release:minor": "npm version minor && npm publish && git push --follow-tags",
-    "release:major": "npm version major && npm publish && git push --follow-tags",
-    "release": "npm run release:patch"
+    "prepublish": "npm test"
   },
   "keywords": [
     "natural sort",
@@ -25,7 +23,10 @@
     "sort algorithm",
     "datetime"
   ],
-  "author": "bubkoo<bubkoo@163.com>",
+  "author": {
+    "name": "bubkooo",
+    "email": "bubkoo@163.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.2",
+    "jshint": "^2.9.1",
     "mocha": "^2.4.5"
   }
 }
