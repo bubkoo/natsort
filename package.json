@@ -1,7 +1,7 @@
 {
   "name": "natsort",
   "version": "1.0.0",
-  "description": "Javascript Natural Sort Algorithm With Unicode Support",
+  "description": "Javascript natural sort algorithm with unicode support.",
   "main": "index.js",
   "scripts": {
     "lint": "jshint index.js",
@@ -12,15 +12,14 @@
     "prepublish": "npm test"
   },
   "keywords": [
-    "natural sort",
+    "natural",
     "natsort",
     "sort",
+    "sorter",
     "numeric",
     "unicode",
-    "date",
     "algorithm",
-    "sorter",
-    "sort algorithm",
+    "date",
     "datetime"
   ],
   "author": {
