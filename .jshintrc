@@ -1,0 +1,15 @@
+{
+  "strict": true,
+  "node": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "undef": true,
+  "boss": true,
+  "eqnull": true,
+  "laxbreak": true,
+  "latedef": "nofunc"
+}
