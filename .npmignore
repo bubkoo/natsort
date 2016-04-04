@@ -1,12 +1,15 @@
 .idea
 .DS_Store
+
 .editorconfig
 .gitignore
+.jshintrc
 .npmignore
 .travis.yml
 .logorc
-.jshintrc
+
 npm-debug.log
 
 /node_modules
 /test
+/logo.svg
