@@ -1,3 +1,10 @@
 font: 'blocked.ttf'
+divided: true
 path:
+  fill: '#6af72e'
+path0:
+  fill: '#fc174f'
+path1:
+  fill: '#fc174f'
+path2:
   fill: '#fc174f'
