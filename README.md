@@ -1,15 +1,11 @@
-# natsort
+![logo.svg](https://cdn.rawgit.com/bubkoo/natsort/a8c250c/logo.svg)
 
-> Javascript Natural Sort Algorithm With Unicode Support.
+> Javascript natural sort algorithm with unicode support.
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/natsort/blob/master/LICENSE)
 
 [![build:?](https://img.shields.io/travis/bubkoo/natsort/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/natsort)
 [![coverage:?](https://img.shields.io/coveralls/bubkoo/natsort/master.svg?style=flat-square)](https://coveralls.io/github/bubkoo/natsort)
-
-[![npm:](https://img.shields.io/npm/v/natsort.svg?style=flat-square)](https://www.npmjs.com/packages/natsort)
-[![downloads:?](https://img.shields.io/npm/dm/natsort.svg?style=flat-square)](https://www.npmjs.com/packages/natsort)
-[![dependencies:?](https://img.shields.io/david/bubkoo/natsort.svg?style=flat-square)](https://david-dm.org/bubkoo/natsort)
 
 ## TL;DR
 
