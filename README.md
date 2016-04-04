@@ -1,4 +1,4 @@
-![logo.svg](https://cdn.rawgit.com/bubkoo/natsort/a8c250c/logo.svg)
+![logo.svg](https://cdn.rawgit.com/bubkoo/natsort/e7f59ae/logo.svg)
 
 > Javascript natural sort algorithm with unicode support.
 
