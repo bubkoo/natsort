@@ -7,6 +7,7 @@
 [![build:?](https://img.shields.io/travis/bubkoo/natsort/master.svg?style=flat-square)](https://travis-ci.org/bubkoo/natsort)
 [![coverage:?](https://img.shields.io/coveralls/bubkoo/natsort/master.svg?style=flat-square)](https://coveralls.io/github/bubkoo/natsort)
 
+
 ## TL;DR
 
 Most sort implementations utilizing a fast sort algorithm but they all lack the ability to perform a "**natural sort**". That is, sorting an array of dates, numeric string, software version numbers, etc. and getting the "natural" a.k.a. "expected" ordering on the results. 
@@ -57,6 +58,8 @@ objArr.sort(function(a, b) {
 ```
 
 ## Examples
+
+Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master/test/spec/). 
 
 ```js
 // simple numerics
@@ -194,6 +197,8 @@ objArr.sort(function(a, b) {
 //[1, 2, 3, 4, 5]
 ```
 
-Find more examples check the tests in `/test`. 
+## Contributing
 
-Contribute your test cases by [issue](https://github.com/javve/natural-sort/issues) or [pull request](https://github.com/javve/natural-sort/pulls).
+Pull requests and stars are highly welcome.
+
+For bugs and feature requests, please [create an issue](https://github.com/bubkoo/natsort/issues/new).
