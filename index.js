@@ -23,11 +23,18 @@ var natsort = function (options) {
 
   var normalize = options.insensitive ?
     function (s) {
-      return ('' + s).toLowerCase().replace(tre, '');
+      return lowerCase('' + s).replace(tre, '');
     } :
     function (s) {
       return ('' + s).replace(tre, '');
     };
+
+  function lowerCase(s) {
+    if (s.toLocaleLowerCase) {
+      return s.toLocaleLowerCase();
+    }
+    return s.toLowerCase();
+  }
 
   function tokenize(s) {
     return s.replace(nre, '\0$1\0')
