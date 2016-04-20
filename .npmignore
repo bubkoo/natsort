@@ -11,5 +11,6 @@
 npm-debug.log
 
 /node_modules
+/dist
 /test
 /logo.svg
