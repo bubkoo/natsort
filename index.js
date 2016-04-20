@@ -12,8 +12,6 @@
 
   function natsort(options) {
 
-    'use strict';
-
     options = options || {};
 
     var GREATER = options.desc ? -1 : 1;
@@ -143,18 +141,22 @@
     };
   }
 
-  // Node.js
-  if (typeof module === 'object' && module.exports) {
+
+  // exports
+  // -------
+
+  /*global module:true, define: true, window: true */
+
+  if (typeof exports === 'object' && typeof module === 'object') {
     module.exports = natsort;
-  }  // AMD / RequireJS
-  else if (typeof define === 'function' && define.amd) {
+  } else if (typeof define === 'function' && define.amd) {
     define([], function () {
       return natsort;
     });
-  }  // included directly via <script> tag
-  else {
-    root.natsort = natsort;
+  } else if (typeof exports === 'object') {
+    exports.natsort = natsort;
+  } else {
+    (typeof window !== 'undefined' ? window : this).natsort = natsort;
   }
 
-}());
-
+})();
