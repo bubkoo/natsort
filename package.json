@@ -1,6 +1,6 @@
 {
   "name": "natsort",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Javascript natural sort algorithm with unicode support.",
   "main": "index.js",
   "scripts": {
