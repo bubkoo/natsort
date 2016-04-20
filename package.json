@@ -7,8 +7,8 @@
     "lint": "jshint index.js",
     "pretest": "npm run lint",
     "test": "mocha -R spec",
-    "test:cov": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
-    "test:rpt": "npm run test:cov && coveralls < ./test/coverage/lcov.info",
+    "coverage": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
+    "coveralls": "npm run coverage && coveralls < ./test/coverage/lcov.info",
     "prepublish": "npm test"
   },
   "keywords": [
@@ -26,7 +26,7 @@
   ],
   "author": {
     "name": "bubkooo",
-    "email": "bubkoo@163.com"
+    "email": "bubkoo.wy@gmail.com"
   },
   "license": "MIT",
   "repository": {
@@ -42,6 +42,7 @@
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.2",
     "jshint": "^2.9.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "uglify-js": "^2.6.2"
   }
 }
