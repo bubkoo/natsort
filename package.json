@@ -1,6 +1,6 @@
 {
   "name": "natsort",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Javascript natural sort algorithm with unicode support.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "coveralls": "npm run coverage && coveralls < ./test/coverage/lcov.info",
     "prepublish": "npm test",
     "watch": "onchange 'index.js' 'test/**/*.js' -e 'test/coverage/**/*.js' -- npm test",
-    "build": "uglifyjs index.js -o ./dist/natsort.min.js --source-map ./dist/natsort.min.js.map -m -c"
+    "build": "uglifyjs index.js -o ./dist/natsort.min.js -m -c"
   },
   "keywords": [
     "natural",
