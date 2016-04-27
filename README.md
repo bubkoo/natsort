@@ -28,8 +28,27 @@ The project name "**natsort**" was inspired from Python's [natsort()](https://py
 
 ## Install
 
+You can get it on npm.
+
 ```
 $ npm install natsort --save
+```
+
+If you're not into package management, just [download a ZIP](https://github.com/bubkoo/natsort/releases) file.
+
+## Setup
+
+First, include the script located on the `dist` folder:
+
+```html
+<script src="dist//natsort.min.js"></script>
+```
+
+Or load it from [jsdelivr](http://www.jsdelivr.com/projects/natsort):
+
+```html
+<script src="https://cdn.jsdelivr.net/natsort/<version>/natsort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/natsort/latest/natsort.min.js"></script>
 ```
 
 ## Usage
@@ -57,14 +76,6 @@ objArr.sort(function(a, b) {
 });
 ```
 
-## Use in WebPage
-
-This module is **umd** supported and hosted on [jsdelivr](http://www.jsdelivr.com/projects/natsort):
-
-```html
-<script src="https://cdn.jsdelivr.net/natsort/<version>/natsort.min.js"></script>
-<script src="https://cdn.jsdelivr.net/natsort/latest/natsort.min.js"></script>
-```
 
 ## Examples
 
