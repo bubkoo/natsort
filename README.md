@@ -57,6 +57,15 @@ objArr.sort(function(a, b) {
 });
 ```
 
+## Use in WebPage
+
+This module is **umd** supported and hosted on [jsdelivr](http://www.jsdelivr.com/projects/natsort):
+
+```html
+<script src="https://cdn.jsdelivr.net/natsort/<version>/natsort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/natsort/latest/natsort.min.js"></script>
+```
+
 ## Examples
 
 Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master/test/spec/). 
