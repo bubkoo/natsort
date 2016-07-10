@@ -18,4 +18,14 @@ describe('unicode: ', function () {
     ]);
   });
 
+  it('unicode string', function () {
+    expect([
+      '\u30c6\u30b9\u30c8 10.txt',
+      '\u30c6\u30b9\u30c8 2.txt',
+    ].sort(natsort())).to.eql([
+      '\u30c6\u30b9\u30c8 2.txt',
+      '\u30c6\u30b9\u30c8 10.txt',
+    ]);
+  });
+
 });

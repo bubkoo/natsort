@@ -126,7 +126,7 @@
           } else if (comp < 0) {
             return SMALLER;
           } else {
-            return 0;
+            continue;
           }
         }
 
