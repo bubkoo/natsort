@@ -96,13 +96,21 @@ describe('rosetta code natural sort small test set: ', function () {
     expect([
       'Equiv. \xfd accents: 2-2',
       'Equiv. \xdd accents: 2-1',
-      'Equiv. y accents: 2+0',
-      'Equiv. Y accents: 2+1'
-    ].sort(natsort({ insensitive: true }))).to.eql([
+      'Equiv. 8 accents: 2-2',
+      'Equiv. 7 accents: 2-1',
+      'Equiv. 9 accents: 2-2',
+      'Equiv. 9 accents: 2-1',
       'Equiv. y accents: 2+0',
       'Equiv. Y accents: 2+1',
-      'Equiv. \xfd accents: 2-2',
-      'Equiv. \xdd accents: 2-1'
+    ].sort(natsort({ insensitive: true }))).to.eql([
+      'Equiv. 7 accents: 2-1',
+      'Equiv. 8 accents: 2-2',
+      'Equiv. 9 accents: 2-1',
+      'Equiv. 9 accents: 2-2',
+      'Equiv. y accents: 2+0',
+      'Equiv. Y accents: 2+1',
+      'Equiv. \xdd accents: 2-1',
+      'Equiv. \xfd accents: 2-2'
     ]);
   });
 

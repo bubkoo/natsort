@@ -1,4 +1,4 @@
-// require('./spec/debug.spec.js');
+require('./spec/debug.spec.js');
 require('./spec/mixed.spec.js');
 require('./spec/datetime.spec.js');
 require('./spec/numeric.spec.js');

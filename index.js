@@ -1,5 +1,5 @@
 /*
- * async
+ * natsort
  * https://github.com/bubkoo/natsort
  *
  * Copyright 2016 bubkoo
@@ -62,7 +62,9 @@
         || 0;
     }
 
+
     return function (a, b) {
+
       // trim pre-post whitespace
       var x = normalize(a);
       var y = normalize(b);
@@ -72,12 +74,15 @@
       if (!x && !y) {
         return 0;
       }
+
       if (!x && y) {
         return SMALLER;
       }
+
       if (x && !y) {
         return GREATER;
       }
+
 
       // tokenize: split numeric strings and default strings
       var xArr = tokenize(x);
@@ -96,8 +101,8 @@
         }
       }
 
-      //console.log('x: ' + xArr.join(' @ '))
-      //console.log('y: ' + yArr.join(' @ '))
+      //console.log('x: ' + xArr.join('@'));
+      //console.log('y: ' + yArr.join('@'));
 
       var xL = xArr.length;
       var yL = yArr.length;
@@ -117,6 +122,7 @@
           return isNaN(xF) ? GREATER : SMALLER;
         }
 
+
         // if unicode use locale comparison
         if (ure.test(xF + yF) && xF.localeCompare) {
           var comp = xF.localeCompare(yF);
@@ -126,7 +132,8 @@
           } else if (comp < 0) {
             return SMALLER;
           } else {
-            return 0;
+            //return 0;
+              continue;
           }
         }
 
