@@ -47,8 +47,8 @@ First, include the script located on the `dist` folder:
 Or load it from [jsdelivr](http://www.jsdelivr.com/projects/natsort):
 
 ```html
-<script src="https://cdn.jsdelivr.net/natsort/<version>/natsort.min.js"></script>
-<script src="https://cdn.jsdelivr.net/natsort/latest/natsort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/natsort@<version>/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/natsort@latest/index.min.js"></script>
 ```
 
 ## Usage
