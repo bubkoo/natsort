@@ -80,4 +80,41 @@ describe('version number strings: ', function () {
       'myRelease-1.2.3'
     ]);
   });
+
+  it('string first and string last', function () {
+    expect([
+      "version-3.27.3",
+      "version-3.27.0",
+      "version-3.26.0",
+      "version-other",
+      "version-3.28.0",
+      "version-3.29.1"
+    ].sort(natsort())).to.eql([
+      "version-3.26.0",
+      "version-3.27.0",
+      "version-3.27.3",
+      "version-3.28.0",
+      "version-3.29.1",
+      "version-other"
+    ]);
+  });
+
+  it('partial version numbers (missing patch or minor)', function () {
+    expect([
+      "3.27.3",
+      "3.27",
+      "3",
+      "other",
+      "3.28",
+      "3.29.1"
+    ].sort(natsort())).to.eql([
+      "3",
+      "3.27",
+      "3.27.3",
+      "3.28",
+      "3.29.1",
+      "other"
+    ]);
+  });
+
 });
