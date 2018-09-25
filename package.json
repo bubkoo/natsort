@@ -1,17 +1,15 @@
 {
   "name": "natsort",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Javascript natural sort algorithm with unicode support.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "jshint index.js",
-    "pretest": "npm run lint",
-    "test": "mocha -R spec",
-    "coverage": "rm -rf ./test/coverage && istanbul cover _mocha --dir ./test/coverage -- -R spec",
-    "coveralls": "npm run coverage && coveralls < ./test/coverage/lcov.info",
-    "prepublish": "npm test",
-    "watch": "onchange 'index.js' 'test/**/*.js' -e 'test/coverage/**/*.js' -- npm test",
-    "build": "uglifyjs index.js -o ./dist/natsort.min.js -m -c"
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js"
+  ],
+  "directories": {
+    "lib": "lib/"
   },
   "keywords": [
     "natural",
@@ -40,12 +38,28 @@
   },
   "homepage": "https://github.com/bubkoo/natsort#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.2",
-    "jshint": "^2.9.1",
-    "mocha": "^2.4.5",
-    "onchange": "^2.4.0",
-    "uglify-js": "^2.6.2"
+    "@types/jest": "^23.3.1",
+    "coveralls": "^3.0.2",
+    "jest": "^23.5.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "typescript": "^3.0.3",
+    "uglify-js": "^2.6.2",
+    "uglifyjs": "^2.4.11"
+  },
+  "scripts": {
+    "lint": "tslint ./src/*.ts -c tslint.json -p tsconfig.json --fix",
+    "clean": "rimraf lib && rimraf dist",
+    "pretest": "rimraf ./test/coverage",
+    "test": "jest",
+    "coveralls": "cat ./test/coverage/lcov.info | coveralls",
+    "prepublish": "npm test",
+    "uglify": "uglifyjs ./dist/index.js -o ./dist/natsort.min.js -m -c",
+    "build:lib": "tsc",
+    "build:dist": "tsc -d false -m UMD --outDir ./dist && npm run uglify && rimraf ./dist/index.js",
+    "prebuild": "npm run clean",
+    "build": "npm run build:lib && npm run build:dist"
   }
 }

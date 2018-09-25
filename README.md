@@ -63,16 +63,16 @@ someArr.sort(natsort({ insensitive: true }));
 
 // sort with object array
 var objArr = [
-    { val: 'B' },
-    { val: 'a' },
-    { val: 'D' },
-    { val: 'c' }
+  { val: 'B' },
+  { val: 'a' },
+  { val: 'D' },
+  { val: 'c' }
 ];
 
 var sorter = natsort();
 
 objArr.sort(function(a, b) {
-    return sorter(a.val, b.val);
+  return sorter(a.val, b.val);
 });
 ```
 
@@ -88,10 +88,10 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // floats
 [
-    '10.0401',
-    10.022,
-    10.042,
-    '10.021999'
+  '10.0401',
+  10.022,
+  10.042,
+  '10.021999'
 ].sort(natsort());
 // [
 //  '10.021999',
@@ -102,10 +102,10 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // float & decimal notation
 [
-    '10.04f',
-    '10.039F',
-    '10.038d',
-    '10.037D'
+  '10.04f',
+  '10.039F',
+  '10.038d',
+  '10.037D'
 ].sort(natsort());
 // [
 //  '10.037D',
@@ -116,9 +116,9 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // scientific notation
 [
-    '1.528535047e5',
-    '1.528535047e7',
-    '1.528535047e3'
+  '1.528535047e5',
+  '1.528535047e7',
+  '1.528535047e3'
 ].sort(natsort());
 // [
 //  '1.528535047e3',
@@ -128,9 +128,9 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // ip addresses
 [
-    '192.168.0.100',
-    '192.168.0.1',
-    '192.168.1.1'
+  '192.168.0.100',
+  '192.168.0.1',
+  '192.168.1.1'
 ].sort(natsort());
 // [
 //  '192.168.0.1',
@@ -140,10 +140,10 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // Filenames
 [
-    'car.mov',
-    '01alpha.sgi',
-    '001alpha.sgi',
-    'my.string_41299.tif'
+  'car.mov',
+  '01alpha.sgi',
+  '001alpha.sgi',
+  'my.string_41299.tif'
 ].sort(natsort());
 // [
 //  '001alpha.sgi',
@@ -154,10 +154,10 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // dates
 [
-    '10/12/2008',
-    '10/11/2008',
-    '10/11/2007',
-    '10/12/2007'
+  '10/12/2008',
+  '10/11/2008',
+  '10/11/2007',
+  '10/12/2007'
 ].sort(natsort());
 // [
 //  '10/11/2007',
@@ -168,9 +168,9 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // money
 [
-    '$10002.00',
-    '$10001.02',
-    '$10001.01'
+  '$10002.00',
+  '$10001.02',
+  '$10001.01'
 ].sort(natsort());
 // [
 //  '$10001.01',
@@ -180,10 +180,10 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // versions
 [
-    '1.0.2',
-    '1.0.1',
-    '1.0.0',
-    '1.0.9'
+  '1.0.2',
+  '1.0.1',
+  '1.0.0',
+  '1.0.9'
 ].sort(natsort());
 // [
 //  '1.0.0',
@@ -194,9 +194,9 @@ Find more examples see the [tests](https://github.com/bubkoo/natsort/blob/master
 
 // movie titles
 [
-    '1 Title - The Big Lebowski',
-    '1 Title - Gattaca',
-    '1 Title - Last Picture Show'
+  '1 Title - The Big Lebowski',
+  '1 Title - Gattaca',
+  '1 Title - Last Picture Show'
 ].sort(natsort());
 // [
 //  '1 Title - Gattaca',
