@@ -277,5 +277,41 @@ describe('contributed tests: ', function () {
     ]);
   });
 
+  it('version string first and string last - jpuffer', function () {
+    expect([
+      "version-3.27.3",
+      "version-3.27.0",
+      "version-3.26.0",
+      "version-other",
+      "version-3.28.0",
+      "version-3.29.1"
+    ].sort(natsort())).to.eql([
+      "version-3.26.0",
+      "version-3.27.0",
+      "version-3.27.3",
+      "version-3.28.0",
+      "version-3.29.1",
+      "version-other"
+    ]);
+  });
+
+  it('partial version numbers (missing patch or minor) - jpuffer', function () {
+    expect([
+      "3.27.3",
+      "3.27",
+      "3",
+      "other",
+      "3.28",
+      "3.29.1"
+    ].sort(natsort())).to.eql([
+      "3",
+      "3.27",
+      "3.27.3",
+      "3.28",
+      "3.29.1",
+      "other"
+    ]);
+  });
+
 });
 
