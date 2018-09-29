@@ -1,4 +1,4 @@
-export type optionsType = {
+export type OptionsType = {
   /*
   * Desc sorting.
   */
@@ -9,7 +9,7 @@ export type optionsType = {
   insensitive?: boolean,
 }
 
-export default function natsort(options: optionsType = {}) {
+export default function natsort(options: OptionsType = {}) {
 
   const ore = /^0/
   const sre = /\s+/g
