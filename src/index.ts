@@ -135,6 +135,14 @@ export default function natsort(options: OptionsType = {}) {
       if (af > bf) {
         return GREATER
       }
+
+      if (`${af}` < `${bf}`) {
+        return SMALLER
+      }
+
+      if (`${af}` > `${bf}`) {
+        return GREATER
+      }
     }
 
     return 0
