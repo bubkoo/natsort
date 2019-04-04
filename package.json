@@ -59,7 +59,7 @@
     "prepublish": "npm test",
     "uglify": "uglifyjs ./dist/index.js -o ./dist/natsort.min.js -m -c",
     "build:lib": "tsc",
-    "build:dist": "tsc -d false -m UMD --outDir ./dist && npm run uglify && rimraf ./dist/index.js",
+    "build:dist": "tsc -d false --outDir ./dist && npm run uglify && rimraf ./dist/index.js",
     "prebuild": "npm run clean",
     "build": "npm run build:lib && npm run build:dist"
   }
