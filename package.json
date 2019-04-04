@@ -1,15 +1,17 @@
 {
   "name": "natsort",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Javascript natural sort algorithm with unicode support.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib/*.d.ts",
-    "lib/*.js"
+    "lib/*.js",
+    "dist/*.js"
   ],
   "directories": {
-    "lib": "lib/"
+    "lib": "lib/",
+    "dist": "dist/"
   },
   "keywords": [
     "natural",
@@ -31,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bubkoo/natsort.git"
+    "url": "git+https://github.com/netop/natsort.git"
   },
   "bugs": {
-    "url": "https://github.com/bubkoo/natsort/issues"
+    "url": "https://github.com/netop/natsort/issues"
   },
-  "homepage": "https://github.com/bubkoo/natsort#readme",
+  "homepage": "https://github.com/netop/natsort#readme",
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "coveralls": "^3.0.2",
