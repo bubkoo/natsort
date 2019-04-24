@@ -28,4 +28,12 @@ describe('mixed values types: ', () => {
     expect(arr1.sort(natsort())).toEqual(arr2)
   })
 
+  it('text with padding numeric string vs text with similar number', () => {
+
+    const arr1 = ['text 02', 'text 3', 'text 2', 'text 1', 'text 001', 'text 01', '3 text']
+    const arr2 = ['3 text', 'text 001', 'text 01', 'text 1', 'text 02', 'text 2', 'text 3']
+
+    expect(arr1.sort(natsort())).toEqual(arr2)
+  })
+
 })
