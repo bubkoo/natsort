@@ -1,6 +1,6 @@
 {
   "name": "natsort",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Javascript natural sort algorithm with unicode support.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
