@@ -33,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/netop/natsort.git"
+    "url": "git+https://github.com/bubkoo/natsort.git"
   },
   "bugs": {
-    "url": "https://github.com/netop/natsort/issues"
+    "url": "https://github.com/bubkoo/natsort/issues"
   },
-  "homepage": "https://github.com/netop/natsort#readme",
+  "homepage": "https://github.com/bubkoo/natsort#readme",
   "devDependencies": {
     "@types/jest": "^23.3.1",
     "coveralls": "^3.0.2",
