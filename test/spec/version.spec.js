@@ -16,6 +16,18 @@ describe('version number strings: ', () => {
     ]);
   });
 
+  it('#6', () => {
+    expect([
+      '1.10.0',
+      '1.9.0',
+      '1.11.0',
+    ].sort(natsort())).toEqual([
+      '1.9.0',
+      '1.10.0',
+      '1.11.0',
+    ]);
+  });
+
   it('more version numbers', () => {
     expect([
       '1.1.100',
