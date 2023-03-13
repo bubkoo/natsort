@@ -9,7 +9,7 @@ export type OptionsType = {
   insensitive?: boolean,
 }
 
-export default function natsort(options: OptionsType = {}) {
+export function natsort(options: OptionsType = {}) {
 
   const ore = /^0/
   const sre = /\s+/g
@@ -27,8 +27,8 @@ export default function natsort(options: OptionsType = {}) {
   const GREATER = options.desc ? -1 : 1
   const SMALLER = -GREATER
   const normalize = options.insensitive
-    ? (s: string | number) => toLowerCase.call(`${s}`).replace(tre, '')
-    : (s: string | number) => (`${s}`).replace(tre, '')
+    ? (s: string | number | undefined) => toLowerCase.call(`${s}`).replace(tre, '')
+    : (s: string | number | undefined) => (`${s}`).replace(tre, '')
 
   function tokenize(s: string): string[] {
     return s.replace(nre, '\0$1\0')
@@ -47,8 +47,8 @@ export default function natsort(options: OptionsType = {}) {
   }
 
   return function (
-    a: string | number,
-    b: string | number,
+    a: string | number | undefined,
+    b: string | number | undefined,
   ): number {
 
     // trim pre-post whitespace
@@ -148,3 +148,5 @@ export default function natsort(options: OptionsType = {}) {
     return 0
   }
 }
+
+export default natsort
